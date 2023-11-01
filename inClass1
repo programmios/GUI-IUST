@@ -22,11 +22,11 @@ document =
 void MainWindow::on_btn_clicked()
 {
     
-    int a , b ;
-       a = ui->num1->text().toInt();
-       a = ui->num2->text().toInt();
-       QString r = QString::number(a+b);
-       ui->btn->setText(r);
+       int a , b ;
+       a = ui->num1->text().toInt(); // متنِ نام1 یوآی1 رو گرفتیم و به عدد صحیح تبدیل کردیم
+       b = ui->num2->text().toInt();
+       QString r = QString::number(a+b);//آ به علاوه ب رو عددیشو جمع میکنه به رشته تبدیل میکنه و در آر میریزه
+       ui->res->setText(r); // جواب نتیجه رو به صورت رشته ای در res قرار میده
 }
 
 
