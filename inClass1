@@ -15,7 +15,18 @@ document =
   یک btn 
   برای کلیک کردن.
   دوتا line edit هم برای ورودی گرفتن.
-  دقت کنید انتظار نمیره شما جمع دو عدد رو حساب کنید و دکمه تون کار کنه
-  فعلا فقط یک محیط گرافیکی ساده قراره طراحی کنین.
+  دقت کنید انتظار میره شما جمع دو عدد رو حساب کنید و دکمه تون کار کنه
 */
 }
+
+void MainWindow::on_btn_clicked()
+{
+    
+    int a , b ;
+       a = ui->num1->text().toInt();
+       a = ui->num2->text().toInt();
+       QString r = QString::number(a+b);
+       ui->btn->setText(r);
+}
+
+
