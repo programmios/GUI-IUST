@@ -22,3 +22,12 @@ MainWindow400400052::MainWindow400400052(QWidget *parent)
     QDateTimeEdit *dt = new QDateTimeEdit(this);
     dt->setGeometry(40,310,200,50);
 }
+
+Add {#include "QLabel"} 
+//code4 = Extend Code1
+{
+    //We add current date in status bar.
+    QString currentDate = QDate::currentDate().toString(); // currentDate is a String
+    QLabel *label = new QLabel(/*not this*/ currentDate); //CUZ We need String for Show
+    ui->StatusBar->addWidget(Label);
+}
